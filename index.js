@@ -1,4 +1,7 @@
-/* global Vue, moment */
+/* global Vue */
+var moment = require("moment");
+var length = require("length.js");
+var math = require("mathjs");
 var app = new Vue({
   el: "#app",
   data: function() {
@@ -22,3 +25,5 @@ console.log(startOfDay);
 
 var conversion = length(70, "m").to("ft");
 console.log(conversion);
+
+console.log(math.evaluate('12 / (2.3 + 0.7)'));
