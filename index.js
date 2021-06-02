@@ -1,8 +1,8 @@
 /* global Vue */
-var moment = require("moment");
-var length = require("length.js");
-var math = require("mathjs");
-var app = new Vue({
+const moment = require("moment");
+const length = require("length.js");
+const math = require("mathjs");
+const app = new Vue({
   el: "#app",
   data: function() {
     return {
@@ -13,7 +13,7 @@ var app = new Vue({
   },
   created: {
 
-  },
+  }, 
   methods: {
 
   }
@@ -27,3 +27,7 @@ var conversion = length(70, "m").to("ft");
 console.log(conversion);
 
 console.log(math.evaluate('12 / (2.3 + 0.7)'));
+console.log(math.evaluate('9 / 3 + 2i'));
+
+let greeting = "howdy!";
+console.log(`Template literals are cool. I can use a variable within a string to say ${greeting}`);
